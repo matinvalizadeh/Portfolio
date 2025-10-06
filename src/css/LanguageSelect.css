@@ -1,0 +1,18 @@
+#language_select_div:hover #languages_button {
+  width: 150px;
+  transition: width 0.3s ease;
+}
+
+#language_select_div:hover #languages_span {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.collapsible-menu .ant-menu-item span.ant-menu-title-content {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.collapsible-menu:hover .ant-menu-item span.ant-menu-title-content {
+  opacity: 1; 
+}

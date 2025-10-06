@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.Persian {
+  --font-family: "Dana", sans-serif;
+  font-size: 16px;
+}
+
+html.English {
+  --font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family) !important;
+}
+
+body {
+  direction: rtl;
+  overflow-x: hidden !important;
+}

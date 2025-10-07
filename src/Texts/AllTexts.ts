@@ -34,7 +34,7 @@ const allTexts = {
 
     //AboutMe
     aboutMeText:
-      "I am a front-end developer who loves creating engaging and user-friendly interfaces. I have completed many practice projects and can work independently or collaboratively in a team. I am always eager to learn and improve, with the goal of becoming a front-end expert first and then acquiring back-end skills to be able to manage projects from start to finish on my own.",
+      "من فرانت‌اند دولوپر هستم و عاشق ساخت رابط‌های کاربری جذاب و کاربردی. پروژه‌های تمرینی زیادی انجام دادم و می‌تونم هم به صورت مستقل و هم در تیم روی پروژه‌ها کار کنم. همیشه دنبال یادگیری و پیشرفت هستم و هدفم اینه که اول در فرانت‌اند حرفه‌ای بشم و بعد مهارت‌های بک‌اند رو هم یاد بگیرم تا پروژه‌ها رو از صفر تا صد خودم مدیریت کنم.",
     aboutMeSecondText:
       "هدف فعلی من علاوه بر کسب درآمد، کسب تجربه و تخصص بیشتر است.",
     aboutMeH2Text: "درباره من",
@@ -278,7 +278,7 @@ const allTexts = {
 
     //AboutMe
     aboutMeText:
-      "Although I have completed several front-end practice projects, I have not yet had official experience working as a front-end developer in a company, and I am currently seeking an internship opportunity. My background in Backend and UI/UX design, as two supporting skills, helps me work more independently on projects. In 90% of cases, I rely on English resources for troubleshooting, research, and watching courses.",
+      "I am a front-end developer who loves creating engaging and user-friendly interfaces. I have completed many practice projects and can work independently or collaboratively in a team. I am always eager to learn and improve, with the goal of becoming a front-end expert first and then acquiring back-end skills to be able to manage projects from start to finish on my own.",
     aboutMeSecondText:
       "My current goal, in addition to earning income, is to gain more experience and expertise.",
     aboutMeH2Text: "About Me",

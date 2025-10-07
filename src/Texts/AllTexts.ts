@@ -34,7 +34,7 @@ const allTexts = {
 
     //AboutMe
     aboutMeText:
-      "من فرانت‌اند دولوپر هستم و عاشق ساخت رابط‌های کاربری جذاب و کاربردی. پروژه‌های تمرینی زیادی انجام دادم و می‌تونم هم به صورت مستقل و هم در تیم روی پروژه‌ها کار کنم. همیشه دنبال یادگیری و پیشرفت هستم و هدفم اینه که اول در فرانت‌اند حرفه‌ای بشم و بعد مهارت‌های بک‌اند رو هم یاد بگیرم تا پروژه‌ها رو از صفر تا صد خودم مدیریت کنم.",
+      "I am a front-end developer who loves creating engaging and user-friendly interfaces. I have completed many practice projects and can work independently or collaboratively in a team. I am always eager to learn and improve, with the goal of becoming a front-end expert first and then acquiring back-end skills to be able to manage projects from start to finish on my own.",
     aboutMeSecondText:
       "هدف فعلی من علاوه بر کسب درآمد، کسب تجربه و تخصص بیشتر است.",
     aboutMeH2Text: "درباره من",

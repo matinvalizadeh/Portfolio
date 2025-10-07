@@ -1,22 +1,14 @@
 import { GlobalOutlined, DownOutlined, CheckOutlined } from "@ant-design/icons";
 import { Button, Dropdown } from "antd";
-import "../css/LanguageSelect.css";
-import { useEffect, useState } from "react";
 import { useLanguageStore } from "../States/Store";
 import { useNavigate } from "react-router-dom";
 
 function LanguageSelect() {
   const { language, websiteTexts } = useLanguageStore();
-
-  const [buttonLeftDistance, setButtonLeftDistance] = useState<string>("-2px");
-  const [buttonRightDistance, setButtonRightDistance] =
-    useState<string>("auto");
-  const [direction, setDirection] = useState<"rtl" | "ltr">("ltr");
-
   const navigate = useNavigate();
 
-  // when language changed
   const handleLanguageSelect = (e: any) => {
+    e.domEvent.preventDefault();
     const selectedLanguage: "English" | "Persian" = e.key;
     navigate(`/${selectedLanguage}`, { replace: false });
   };
@@ -26,18 +18,18 @@ function LanguageSelect() {
       {
         key: "Persian",
         label: (
-          <span className="block flex justify-between items-center">
+          <span className="flex justify-between items-center w-full">
             {websiteTexts.persian}
-            {language == "Persian" && <CheckOutlined />}
+            {language === "Persian" && <CheckOutlined />}
           </span>
         ),
       },
       {
         key: "English",
         label: (
-          <span className="block flex justify-between items-center">
+          <span className="flex justify-between items-center w-full">
             {websiteTexts.english}
-            {language == "English" && <CheckOutlined />}
+            {language === "English" && <CheckOutlined />}
           </span>
         ),
       },
@@ -45,44 +37,26 @@ function LanguageSelect() {
     onClick: handleLanguageSelect,
   };
 
-  useEffect(() => {
-    if (language === "Persian") {
-      setButtonLeftDistance("auto");
-      setButtonRightDistance("-6px");
-      setDirection("rtl");
-    } else {
-      setButtonLeftDistance("-6px");
-      setButtonRightDistance("auto");
-      setDirection("ltr");
-    }
-  }, [language]);
+  const direction = language === "Persian" ? "rtl" : "ltr";
+
+  const containerStyle =
+    language === "Persian"
+      ? { right: 0 }
+      : { left: 0};
 
   return (
-    <div id="language_select_div" className="block">
+    <div className="fixed top-4 z-50" style={containerStyle}>
       <Dropdown
         menu={menuProps}
-        trigger={["hover"]}
+        trigger={["click"]}
         placement="bottomLeft"
-        getPopupContainer={() =>
-          document.getElementById("language_select_div") as HTMLElement
-        }
+        getPopupContainer={() => document.body}
       >
         <Button
           type="primary"
-          id="languages_button"
-          className="fixed top-4 right-3 md:top-[5%] md:right-5 w-[70px] h-[30px] z-50 flex justify-end"
           dir={direction}
-          style={{
-            right: buttonRightDistance,
-            left: buttonLeftDistance,
-          }}
+          className="w-[70px] h-[30px] flex justify-center items-center"
         >
-          <span
-            id="languages_span"
-            className="opacity-0 transition duration-400"
-          >
-            {websiteTexts.languageText}
-          </span>
           <GlobalOutlined className="!m-0" />
           <DownOutlined className="!m-0" />
         </Button>

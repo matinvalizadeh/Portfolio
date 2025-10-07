@@ -58,7 +58,7 @@ function LanguageSelect() {
   }, [language]);
 
   return (
-    <div id="language_select_div" className="hidden lg:block">
+    <div id="language_select_div" className="block">
       <Dropdown
         menu={menuProps}
         trigger={["hover"]}
@@ -70,7 +70,7 @@ function LanguageSelect() {
         <Button
           type="primary"
           id="languages_button"
-          className="fixed w-[70px] h-[30px] z-50 top-[5%] flex justify-end"
+          className="fixed top-4 right-3 md:top-[5%] md:right-5 w-[70px] h-[30px] z-50 flex justify-end"
           dir={direction}
           style={{
             right: buttonRightDistance,

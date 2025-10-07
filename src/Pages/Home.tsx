@@ -24,14 +24,14 @@ function Landing() {
       lang = "Persian";
       direction = "rtl";
       oppositeDirection = "ltr";
-      document.title = "وبسایت معرفی فرشاد ارباب | کارآموز فرانت‌اند(React)";
+      document.title = "وبسایت معرفی متین ولی زاده | برنامه نویس فرانت‌اند(React)";
       sign = -1;
     } else {
       lang = "English";
       direction = "ltr";
       oppositeDirection = "rtl";
       document.title =
-        "Intern Front-End Developer (React) | Farshad Arbab's Portfolio Website";
+        "Front-End Developer (React) | Matin Valizadeh's Portfolio Website";
       sign = 1;
     }
 

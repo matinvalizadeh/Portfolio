@@ -9,13 +9,18 @@ function Footer() {
     {
       image: "Telegram.png",
       alt: "Telegram",
-      link: "https://t.me/matin_vlz",
+      link: "https://t.me/matinvlz",
     },
 
     {
       image: "github.webp",
       alt: "github",
       link: "https://github.com/matinvalizadeh",
+    },
+    {
+      image: "linkedin.png",
+      alt: "linkedin",
+      link: "https://www.linkedin.com/in/matin-valizadeh/",
     },
   ];
   return (

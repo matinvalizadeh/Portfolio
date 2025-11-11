@@ -15,16 +15,17 @@ function Landing() {
   const { language } = useParams();
 
   useEffect(() => {
-    let lang: "English" | "Persian";
-    let direction: "rtl" | "ltr";
-    let oppositeDirection: "rtl" | "ltr";
+    let lang: "Persian" | "English";
+    let direction: "ltr" | "rtl";
+    let oppositeDirection: "ltr" | "rtl";
     let sign: 1 | -1;
 
     if (language == "Persian") {
       lang = "Persian";
       direction = "rtl";
       oppositeDirection = "ltr";
-      document.title = "وبسایت معرفی متین ولی زاده | برنامه نویس فرانت‌اند(React)";
+      document.title =
+        "وبسایت معرفی متین ولی زاده | برنامه نویس فرانت‌اند(React)";
       sign = -1;
     } else {
       lang = "English";
@@ -48,14 +49,14 @@ function Landing() {
   }, [language]);
 
   return (
-      <div>
-        <LanguageSelect />
-        <FirstView />
-        <SecondSection />
-        <SkillsSection />
-        <Portfolios />
-        <Footer />
-      </div>
+    <div>
+      <LanguageSelect />
+      <FirstView />
+      <SecondSection />
+      <SkillsSection />
+      <Portfolios />
+      <Footer />
+    </div>
   );
 }
 
